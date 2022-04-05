@@ -13,20 +13,36 @@
 @font-face {
     font-weight: 400;
     font-family: "Open Sans";
-    src: url("../assets/fonts/OpenSans-Regular.ttf") format("ttf");
+    src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
     font-weight: 400;
     font-family: "Neucha";
-    src: url("../assets/fonts/Neucha-Regular.ttf") format("ttf");
+    src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
 body {
+    margin: 0;
+
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     color: var(--dark);
+
+    /*overflow-x: hidden;*/
+}
+
+main {
+    margin: 0 auto;
+
+    width: 1440px;
 }
 
 h1 {
@@ -44,15 +60,120 @@ h3 {
 h1,
 h2,
 h3 {
+    flex-shrink: 0;
+    margin: 0;
     line-height: 1.2em;
 }
 
-section {
+.header-section {
+    position: relative;
     display: flex;
     justify-content: center;
 
-    max-width: 1110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    width: 1440px;
+    height: 914px;
+}
+
+.header-section-head > h1 {
+    font-family: "Neucha", sans-serif;
+    font-weight: 400;
+}
+
+.w-1110 {
+    width: 1110px;
+}
+
+.block-text > section {
+    width: 50%;
+}
+
+.m-right-30 {
+    margin-right: 30px;
+}
+
+section::before {
+    position: absolute;
+    top: 0;
+
+    width: 1440px;
+    height: 914px;
+
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+    opacity: 10%;
+
+    content: '';
+}
+
+section::after {
+    position: absolute;
+    top: 0;
+
+    width: 1440px;
+    height: 914px;
+
+    background-color: var(--light-coloured);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -3;
+
+    opacity: 100%;
+
+    content: '';
+}
+
+.no-background::before {
+    width: 0;
+    height: 0;
+
+    background-image: none;
+}
+
+.no-background::after {
+    width: 0;
+    height: 0;
+
+    background: none;
+}
+
+img {
+    position: absolute;
+    top: 55px;
+    right: 270px;
+
+    height: 525px;
+
+    z-index: -1;
+}
+
+.block-link {
+    padding: 11px 24px 11px 24px;
+    width: min-content;
+}
+
+.link-more {
+    color: var(--white);
+
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.c-basic {
+    color: var(--basic);
+}
+
+.bg-color-basic {
+    background-color: var(--basic);
 }
