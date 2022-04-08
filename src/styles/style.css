@@ -43,10 +43,15 @@ main {
 }
 
 .header-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 165px;
+
+    box-sizing: border-box;
 
     overflow: hidden;
+}
+
+img {
+    margin-right: 165px;
 }
 
 h1,
@@ -56,15 +61,11 @@ h3 {
 }
 
 .title-section > h1 {
-    margin-bottom: 200px;
+    margin-bottom: 185px;
 }
 
-p {
-    margin: 0;
-}
-
-.block-link {
-    padding: 11px 24px 11px 24px;
+.link-more {
+    padding: 12px 24px;
 }
 
 .m-right-30 {
@@ -81,11 +82,13 @@ section::before,
 section::after {
     position: absolute;
     top: 0;
+    left: 0;
     
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+header,
 .header-section,
 section::before,
 section::after {
@@ -123,9 +126,8 @@ img {
     position: absolute;
     top: 55px;
     right: -270px;
-    
-    margin-top: -100px;
 
+    width: 1082.81px;
     height: 525px;
 
     z-index: -1;
@@ -151,8 +153,11 @@ img {
     width: 50%;
 }
 
-.block-link {
-    width: min-content;
+.link-more {
+    display: block;
+    box-sizing: border-box;
+    width: 148px;
+    height: 49px;
 }
 
 /* Typography properties*/
@@ -161,6 +166,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    font-family: "Neucha", sans-serif;
+    line-height: 1.2em;
 }
 
 h1 {
@@ -175,17 +188,7 @@ h3 {
     font-size: 34px;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 400;
-    font-family: "Neucha", sans-serif;
-    line-height: 1.2em;
-}
 
-.block-text {
-    line-height: 23.5px;
-}
 
 .link-more {
     font-weight: 700;
