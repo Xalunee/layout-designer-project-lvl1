@@ -83,17 +83,12 @@ h3 {
 
 .block-title,
 .card {
-    margin-right: 30px;
     margin-bottom: 20px;
 }
 
-.card:nth-child(2n) {
+.card:nth-child(1n+4) {
     margin-bottom: 0px;
     height: 348px;
-}
-
-.card:nth-child(1n+5) {
-    margin-right: 0px;
 }
 
 .card > h1 {
@@ -206,6 +201,10 @@ img {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.justify-sb{
+    justify-content: space-between;
 }
 
 .w-1440 {
@@ -333,6 +332,12 @@ a {
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.h-914 {
-    height: 914px;
+.navigation-section {
+    height: 691px;
+
+    padding-bottom: 0px;
+}
+
+.card > h1 {
+    font-weight: bold;
 }
