@@ -77,6 +77,10 @@ h3 {
     padding-top: 200px;
 }
 
+.navigation-section {
+    padding-bottom: 0px;
+}
+
 .card {
     padding: 24px;
 }
@@ -230,6 +234,10 @@ img {
     height: 323px;
 }
 
+.navigation-section {
+    height: 691px;
+}
+
 /* Typography properties*/
 
 body {
@@ -274,6 +282,7 @@ a {
 
 .card > h1 {
     font: 64px/1 "Neucha";
+    font-weight: bold;
 }
 
 /* Color properties */
@@ -330,14 +339,4 @@ a {
 
 .filter {
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.navigation-section {
-    height: 691px;
-
-    padding-bottom: 0px;
-}
-
-.card > h1 {
-    font-weight: bold;
 }
