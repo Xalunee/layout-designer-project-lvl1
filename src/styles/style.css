@@ -73,6 +73,33 @@ h3 {
     padding: 12px 24px;
 }
 
+#navigation {
+    padding-top: 200px;
+}
+
+.card {
+    padding: 24px;
+}
+
+.block-title,
+.card {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.card:nth-child(2n) {
+    margin-bottom: 0px;
+    height: 348px;
+}
+
+.card:nth-child(1n+5) {
+    margin-right: 0px;
+}
+
+.card > h1 {
+    margin-bottom: 40px;
+}
+
 .m-right-30 {
     margin-right: 30px;
 }
@@ -177,6 +204,10 @@ img {
     justify-content: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .w-1440 {
     width: 1440px;
 }
@@ -190,6 +221,14 @@ img {
     box-sizing: border-box;
     width: 148px;
     height: 49px;
+}
+
+.block-title,
+.card {
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    height: 323px;
 }
 
 /* Typography properties*/
@@ -223,8 +262,19 @@ h3 {
 .link-more {
     font-weight: 700;
     
-    text-decoration: none;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.block-title > h2 {
+    font-size: 52px;
+}
+
+.card > h1 {
+    font: 64px/1 "Neucha";
 }
 
 /* Color properties */
@@ -245,12 +295,36 @@ h3 {
     background-color: var(--basic);
 }
 
-a:hover {
+.link-more:hover {
     background-color: var(--basic-slightly-dark);
 }
 
 .bg-basic-dark {
     background-color: var(--basic-dark);
+}
+
+.card {
+    background-color: var(--light-coloured);
+}
+
+.card > h1 {
+    color: var(--basic-dark);
+}
+
+.card > h3 {
+    color: var(--basic);
+}
+
+.card > p {
+    color: var(--dark);
+}
+
+.card:hover {
+    background-color: var(--basic);
+}
+
+.card:hover > * {
+    color: var(--white);
 }
 
 /* Other properties */
