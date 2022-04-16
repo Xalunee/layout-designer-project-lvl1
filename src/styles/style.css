@@ -55,7 +55,7 @@ section[class*="section"] {
     padding: 100px 165px;
 }
 
-img {
+.m-right-165 {
     margin-right: 165px;
 }
 
@@ -97,6 +97,19 @@ h3 {
 
 .card > h1 {
     margin-bottom: 40px;
+}
+
+.text-small {
+    margin: 0px;
+}
+
+.subtitle {
+    margin: 100px 0 20px 0;
+    padding: 5px 0 5px 10px;
+}
+
+.ikea-desc > p {
+    margin-top: 0px;
 }
 
 .m-right-30 {
@@ -171,7 +184,7 @@ section::after {
     background-image: none;
 }
 
-img {
+.header-img {
     position: absolute;
     top: 55px;
     right: -270px;
@@ -215,6 +228,14 @@ img {
     width: 1440px;
 }
 
+.w-1110 {
+    width: 1110px;
+}
+
+.h-434 {
+    height: 434px;
+}
+
 .block-text > section {
     width: 50%;
 }
@@ -236,6 +257,20 @@ img {
 
 .navigation-section {
     height: 691px;
+}
+
+.ikea-section {
+    width: 1110px;
+    height: 705px;
+}
+
+.ikea-section > div > img {
+    width: 578px;
+    height: 434px;
+}
+
+.ikea-desc > * {
+    width: 50%;
 }
 
 /* Typography properties*/
@@ -283,6 +318,22 @@ a {
 .card > h1 {
     font: 64px/1 "Neucha";
     font-weight: bold;
+}
+
+.text-small {
+    font-size: 24px;
+    font-family: "Neucha";
+}
+
+.lead {
+    font: 34px/1.2 "Neucha";
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
 }
 
 /* Color properties */
@@ -333,6 +384,14 @@ a {
 
 .card:hover > * {
     color: var(--white);
+}
+
+.text-small {
+    color: var(--dark-translucent);
+}
+
+.subtitle {
+    background-color: var(--brown);
 }
 
 /* Other properties */
