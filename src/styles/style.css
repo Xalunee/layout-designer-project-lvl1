@@ -111,7 +111,8 @@ h3 {
 .ikea-desc > p,
 .premature-optimization-desc > p,
 .distortion-of-novelty-desc > p,
-.hyperbolic-depreciation-desc > p {
+.hyperbolic-depreciation-desc > p,
+.errors-in-planning-desc > p {
     margin-top: 0px;
 }
 
@@ -269,7 +270,8 @@ section::after {
 .ikea-image,
 .premature-optimization-image,
 .distortion-of-novelty-image,
-.hyperbolic-depreciation-image {
+.hyperbolic-depreciation-image,
+.errors-in-planning-image {
     width: 578px;
     height: 434px;
 }
@@ -277,7 +279,8 @@ section::after {
 .ikea-desc > *,
 .premature-optimization-desc > *,
 .distortion-of-novelty-desc > *,
-.hyperbolic-depreciation-desc > * {
+.hyperbolic-depreciation-desc > *,
+.errors-in-planning-desc > * {
     width: 50%;
 }
 
