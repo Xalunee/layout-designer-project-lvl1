@@ -110,7 +110,8 @@ h3 {
 
 .ikea-desc > p,
 .premature-optimization-desc > p,
-.distortion-of-novelty-desc > p {
+.distortion-of-novelty-desc > p,
+.hyperbolic-depreciation-desc > p {
     margin-top: 0px;
 }
 
@@ -266,14 +267,17 @@ section::after {
 }
 
 .ikea-image,
-.premature-optimization-image {
+.premature-optimization-image,
+.distortion-of-novelty-image,
+.hyperbolic-depreciation-image {
     width: 578px;
     height: 434px;
 }
 
 .ikea-desc > *,
 .premature-optimization-desc > *,
-.distortion-of-novelty-desc > * {
+.distortion-of-novelty-desc > *,
+.hyperbolic-depreciation-desc > * {
     width: 50%;
 }
 
@@ -410,7 +414,8 @@ h2 {
     background-color: var(--brown);
 }
 
-.premature-optimization-section::after {
+.premature-optimization-section::after,
+.hyperbolic-depreciation-section::after {
     background-color: var(--brown);
 }
 
