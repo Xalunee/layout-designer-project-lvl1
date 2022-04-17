@@ -108,7 +108,8 @@ h3 {
     padding: 5px 0 5px 10px;
 }
 
-.ikea-desc > p {
+.ikea-desc > p,
+.premature-optimization-desc > p {
     margin-top: 0px;
 }
 
@@ -168,7 +169,6 @@ section::before {
 }
 
 section::after {
-    background-color: var(--light-coloured);
     z-index: -3;
     
     opacity: 100%;
@@ -264,12 +264,14 @@ section::after {
     height: 705px;
 }
 
-.ikea-section > div > img {
+.ikea-image,
+.premature-optimization-image {
     width: 578px;
     height: 434px;
 }
 
-.ikea-desc > * {
+.ikea-desc > *,
+.premature-optimization-desc > * {
     width: 50%;
 }
 
@@ -338,6 +340,10 @@ a {
 
 /* Color properties */
 
+section::after {
+    background-color: var(--light-coloured);
+}
+
 .c-dark {
     color: var(--dark);
 }
@@ -386,12 +392,28 @@ a {
     color: var(--white);
 }
 
-.text-small {
+.c-dark-translucent {
     color: var(--dark-translucent);
+}
+
+.c-translucent-white {
+    color: var(--translucent-white);
 }
 
 .subtitle {
     background-color: var(--brown);
+}
+
+.premature-optimization-section::after {
+    background-color: var(--brown);
+}
+
+.c-brown {
+    color: var(--brown);
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 /* Other properties */
