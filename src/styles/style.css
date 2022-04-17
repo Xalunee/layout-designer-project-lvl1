@@ -109,7 +109,8 @@ h3 {
 }
 
 .ikea-desc > p,
-.premature-optimization-desc > p {
+.premature-optimization-desc > p,
+.distortion-of-novelty-desc > p {
     margin-top: 0px;
 }
 
@@ -271,7 +272,8 @@ section::after {
 }
 
 .ikea-desc > *,
-.premature-optimization-desc > * {
+.premature-optimization-desc > *,
+.distortion-of-novelty-desc > * {
     width: 50%;
 }
 
