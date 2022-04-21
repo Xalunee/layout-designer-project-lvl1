@@ -80,7 +80,6 @@ h3 {
   box-sizing: border-box;
   width: 148px;
   height: 49px;
-  
   padding: 12px 24px;
 
   font-weight: 700;
@@ -102,9 +101,39 @@ h3 {
   background-color: var(--light-coloured);
 }
 
+.card > h1 {
+  margin-bottom: 40px;
+
+  font: 64px/1 Neucha, sans-serif;
+  font-weight: bold;
+
+  color: var(--basic-dark);
+}
+
+.card > h3 {
+  color: var(--basic);
+}
+
+.card > p {
+  color: var(--dark);
+}
+
+.card:hover {
+  background-color: var(--basic);
+}
+
+.card:hover > * {
+  color: var(--white);
+}
+
 .block-title,
 .card {
   margin-bottom: 20px;
+
+  display: block;
+  box-sizing: border-box;
+  width: 350px;
+  height: 323px;
 }
 
 .card:nth-child(1n + 4) {
@@ -124,15 +153,6 @@ h2 {
 
 h3 {
   font-size: 34px;
-}
-
-.card > h1 {
-  margin-bottom: 40px;
-
-  font: 64px/1 Neucha, sans-serif;
-  font-weight: bold;
-
-  color: var(--basic-dark);
 }
 
 .text-small {
@@ -204,8 +224,6 @@ input {
 .text-align {
   text-align: center;
 }
-
-/* Box-model properties */
 
 .header-section {
   width: 1440px;
@@ -325,14 +343,6 @@ section::after {
   width: 50%;
 }
 
-.block-title,
-.card {
-  display: block;
-  box-sizing: border-box;
-  width: 350px;
-  height: 323px;
-}
-
 .ikea-section {
   width: 1110px;
   height: 705px;
@@ -430,22 +440,6 @@ button:hover {
   background-color: var(--basic-dark);
 }
 
-.card > h3 {
-  color: var(--basic);
-}
-
-.card > p {
-  color: var(--dark);
-}
-
-.card:hover {
-  background-color: var(--basic);
-}
-
-.card:hover > * {
-  color: var(--white);
-}
-
 .c-dark-translucent {
   color: var(--dark-translucent);
 }
@@ -475,8 +469,6 @@ button:hover {
   color: var(--blue);
 }
 
-/* Other properties */
-
 .filter {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
