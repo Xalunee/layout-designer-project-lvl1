@@ -168,12 +168,34 @@ h3 {
   background-color: var(--brown);
 }
 
+.ikea-section {
+  width: 1110px;
+  height: 705px;
+}
+
 .ikea-desc > p,
 .premature-optimization-desc > p,
 .distortion-of-novelty-desc > p,
 .hyperbolic-depreciation-desc > p,
 .errors-in-planning-desc > p {
   margin-top: 0;
+}
+
+.ikea-image,
+.premature-optimization-image,
+.distortion-of-novelty-image,
+.hyperbolic-depreciation-image,
+.errors-in-planning-image {
+  width: 578px;
+  height: 434px;
+}
+
+.ikea-desc > *,
+.premature-optimization-desc > *,
+.distortion-of-novelty-desc > *,
+.hyperbolic-depreciation-desc > *,
+.errors-in-planning-desc > * {
+  width: 50%;
 }
 
 .contact-block {
@@ -340,28 +362,6 @@ section::after {
 }
 
 .block-text > section {
-  width: 50%;
-}
-
-.ikea-section {
-  width: 1110px;
-  height: 705px;
-}
-
-.ikea-image,
-.premature-optimization-image,
-.distortion-of-novelty-image,
-.hyperbolic-depreciation-image,
-.errors-in-planning-image {
-  width: 578px;
-  height: 434px;
-}
-
-.ikea-desc > *,
-.premature-optimization-desc > *,
-.distortion-of-novelty-desc > *,
-.hyperbolic-depreciation-desc > *,
-.errors-in-planning-desc > * {
   width: 50%;
 }
 
