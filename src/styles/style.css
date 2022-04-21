@@ -29,8 +29,6 @@
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
-/* Positioning properties */
-
 .p-relative {
   position: relative;
 }
@@ -45,6 +43,10 @@
 
 body {
   margin: 0;
+
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
 }
 
 main {
@@ -63,6 +65,10 @@ h1,
 h2,
 h3 {
   margin: 0;
+
+  font-weight: 400;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
 }
 
 .header-title {
@@ -70,7 +76,16 @@ h3 {
 }
 
 .link-more {
+  display: block;
+  box-sizing: border-box;
+  width: 148px;
+  height: 49px;
+  
   padding: 12px 24px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
 }
 
 #navigation {
@@ -79,10 +94,12 @@ h3 {
 
 .navigation-section {
   padding-bottom: 0;
+  height: 691px;
 }
 
 .card {
   padding: 24px;
+  background-color: var(--light-coloured);
 }
 
 .block-title,
@@ -92,19 +109,47 @@ h3 {
 
 .card:nth-child(1n + 4) {
   margin-bottom: 0;
+  height: 348px;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+
+  color: var(--basic);
+}
+
+h3 {
+  font-size: 34px;
 }
 
 .card > h1 {
   margin-bottom: 40px;
+
+  font: 64px/1 Neucha, sans-serif;
+  font-weight: bold;
+
+  color: var(--basic-dark);
 }
 
 .text-small {
   margin: 0;
+
+  font: 24px/1.2 Neucha, sans-serif;
 }
 
 .subtitle {
   margin: 100px 0 20px;
   padding: 5px 0 5px 10px;
+
+  font: 14px/1.2 "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
 }
 
 .ikea-desc > p,
@@ -122,10 +167,18 @@ h3 {
 
 input {
   padding: 15px;
+
+  box-sizing: border-box;
+  width: 423px;
+  height: 50px;
+
+  border: none;
 }
 
 .copyright {
   margin-top: 60px;
+
+  font-size: 14px;
 }
 
 .m-0 {
@@ -155,6 +208,9 @@ input {
 /* Box-model properties */
 
 .header-section {
+  width: 1440px;
+  height: auto;
+
   box-sizing: border-box;
 
   overflow: hidden;
@@ -169,11 +225,6 @@ section::after {
 
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header-section {
-  width: 1440px;
-  height: auto;
 }
 
 header,
@@ -199,6 +250,8 @@ section::after {
   opacity: 1;
 
   content: "";
+
+  background-color: var(--light-coloured);
 }
 
 .no-background::before,
@@ -215,7 +268,6 @@ section::after {
   right: -270px;
 
   z-index: -1;
-  
   width: 1082.81px;
   height: 525px;
 }
@@ -273,27 +325,12 @@ section::after {
   width: 50%;
 }
 
-.link-more {
-  display: block;
-  box-sizing: border-box;
-  width: 148px;
-  height: 49px;
-}
-
 .block-title,
 .card {
   display: block;
   box-sizing: border-box;
   width: 350px;
   height: 323px;
-}
-
-.card:nth-child(1n + 4) {
-  height: 348px;
-}
-
-.navigation-section {
-  height: 691px;
 }
 
 .ikea-section {
@@ -318,14 +355,6 @@ section::after {
   width: 50%;
 }
 
-input {
-  box-sizing: border-box;
-  width: 423px;
-  height: 50px;
-
-  border: none;
-}
-
 button {
   position: relative;
 
@@ -345,10 +374,10 @@ button::before {
   width: 24px;
   height: 24px;
 
-  transform: translateY(-50%);
-
   background-image: url("../assets/images/send.svg");
   background-repeat: no-repeat;
+
+  transform: translateY(-50%);
 
   content: "";
 }
@@ -361,40 +390,6 @@ button:hover {
   width: 50%;
 }
 
-/* Typography properties */
-
-body {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6em;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 400;
-  font-family: Neucha, sans-serif;
-  line-height: 1.2em;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-size: 60px;
-}
-
-h3 {
-  font-size: 34px;
-}
-
-.link-more {
-  font-weight: 700;
-
-  text-transform: uppercase;
-}
-
 .decoration-none {
   text-decoration: none;
 }
@@ -403,41 +398,12 @@ h3 {
   font-size: 52px;
 }
 
-.card > h1 {
-  font: 64px/1 Neucha, sans-serif;
-  font-weight: bold;
-}
-
-.text-small {
-  font: 24px/1.2 Neucha, sans-serif;
-}
-
 .lead {
   font: 34px/1.2 Neucha, sans-serif;
 }
 
-.subtitle {
-  font: 14px/1.2 "Open Sans", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.copyright {
-  font-size: 14px;
-}
-
 .fs-12 {
   font-size: 12px;
-}
-
-/* Color properties */
-
-section::after {
-  background-color: var(--light-coloured);
-}
-
-h2 {
-  color: var(--basic);
 }
 
 .c-dark {
@@ -464,14 +430,6 @@ h2 {
   background-color: var(--basic-dark);
 }
 
-.card {
-  background-color: var(--light-coloured);
-}
-
-.card > h1 {
-  color: var(--basic-dark);
-}
-
 .card > h3 {
   color: var(--basic);
 }
@@ -494,10 +452,6 @@ h2 {
 
 .c-translucent-white {
   color: var(--translucent-white);
-}
-
-.subtitle {
-  background-color: var(--brown);
 }
 
 .premature-optimization-section::after,
