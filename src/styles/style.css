@@ -203,6 +203,10 @@ h3 {
   padding-left: 55px;
 }
 
+.contact-block > * {
+  width: 50%;
+}
+
 .card:hover > * {
   color: var(--white);
 }
@@ -394,10 +398,6 @@ button::before {
 
 button:hover {
   background-color: var(--basic-slightly-dark);
-}
-
-.contact-block > * {
-  width: 50%;
 }
 
 .decoration-none {
