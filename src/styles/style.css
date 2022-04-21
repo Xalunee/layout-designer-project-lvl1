@@ -29,7 +29,7 @@
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
-/* Positioning properties*/
+/* Positioning properties */
 
 .p-relative {
   position: relative;
@@ -103,7 +103,7 @@ h3 {
 }
 
 .subtitle {
-  margin: 100px 0 20px 0;
+  margin: 100px 0 20px;
   padding: 5px 0 5px 10px;
 }
 
@@ -154,10 +154,6 @@ input {
 
 /* Box-model properties */
 
-.card:nth-child(1n + 4) {
-  height: 348px;
-}
-
 .header-section {
   box-sizing: border-box;
 
@@ -188,15 +184,18 @@ section::after {
 }
 
 section::before {
+  z-index: -2;
+
   background-image: url("../assets/images/background.png");
 
-  z-index: -2;
   opacity: 0.1;
+
   content: "";
 }
 
 section::after {
   z-index: -3;
+
   opacity: 1;
 
   content: "";
@@ -216,6 +215,7 @@ section::after {
   right: -270px;
 
   z-index: -1;
+  
   width: 1082.81px;
   height: 525px;
 }
@@ -288,6 +288,10 @@ section::after {
   height: 323px;
 }
 
+.card:nth-child(1n + 4) {
+  height: 348px;
+}
+
 .navigation-section {
   height: 691px;
 }
@@ -329,8 +333,8 @@ button {
   width: 70px;
   height: 50px;
 
-  border: none;
   background-color: var(--basic);
+  border: none;
   cursor: pointer;
 }
 
@@ -338,13 +342,14 @@ button::before {
   position: absolute;
   left: 25px;
 
-  transform: translateY(-50%);
-
   width: 24px;
   height: 24px;
 
+  transform: translateY(-50%);
+
   background-image: url("../assets/images/send.svg");
   background-repeat: no-repeat;
+
   content: "";
 }
 
@@ -359,8 +364,8 @@ button:hover {
 /* Typography properties */
 
 body {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
 }
 
@@ -399,23 +404,21 @@ h3 {
 }
 
 .card > h1 {
-  font: 64px/1 "Neucha";
+  font: 64px/1 Neucha, sans-serif;
   font-weight: bold;
 }
 
 .text-small {
-  font-size: 24px;
-  font-family: Neucha;
+  font: 24px/1.2 Neucha, sans-serif;
 }
 
 .lead {
-  font: 34px/1.2 Neucha;
+  font: 34px/1.2 Neucha, sans-serif;
 }
 
 .subtitle {
+  font: 14px/1.2 "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  font-family: "Open Sans";
   text-transform: uppercase;
 }
 
