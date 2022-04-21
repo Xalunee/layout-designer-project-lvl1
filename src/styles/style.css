@@ -71,6 +71,20 @@ h3 {
   line-height: 1.2em;
 }
 
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+
+  color: var(--basic);
+}
+
+h3 {
+  font-size: 34px;
+}
+
 .header-title {
   margin-bottom: 185px;
 }
@@ -118,14 +132,6 @@ h3 {
   color: var(--dark);
 }
 
-.card:hover {
-  background-color: var(--basic);
-}
-
-.card:hover > * {
-  color: var(--white);
-}
-
 .block-title,
 .card {
   margin-bottom: 20px;
@@ -136,23 +142,13 @@ h3 {
   height: 323px;
 }
 
+.card:hover {
+  background-color: var(--basic);
+}
+
 .card:nth-child(1n + 4) {
   margin-bottom: 0;
   height: 348px;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-size: 60px;
-
-  color: var(--basic);
-}
-
-h3 {
-  font-size: 34px;
 }
 
 .text-small {
@@ -183,6 +179,10 @@ h3 {
 .contact-block {
   padding-right: 55px;
   padding-left: 55px;
+}
+
+.card:hover > * {
+  color: var(--white);
 }
 
 input {
